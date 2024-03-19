@@ -17,11 +17,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  const inProduction = process.env.NODE_ENV === "production";
+  
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-    <SpeedInsights/>
-    <Analytics/>
+    {inProduction && <SpeedInsights/>}
+    {inProduction && <Analytics/>}
     </html>
   );
 }
