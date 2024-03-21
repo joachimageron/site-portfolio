@@ -316,7 +316,7 @@ export default function Home() {
                   </div>
                </section>
                <footer className={'mt-14 lg:my-32'}>
-                  <p>
+                  <p className={'text-sm'}>
                      Designed in <span className={'text-white font-bold'}>Figma</span>,
                      built with <span className={'text-white font-bold'}>Next.js</span> and <span
                      className={'text-white font-bold'}>Tailwind CSS</span>,
