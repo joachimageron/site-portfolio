@@ -42,7 +42,7 @@ export default function Home() {
                            <h1 className='text-4xl font-bold pb-4 text-white'>Ageron Joachim</h1>
                            <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
                         </div>
-                        <div className={'rounded-full w-28 h-28 relative '}>
+                        <div className={'rounded-full w-28 h-28 relative hidden lg:block'}>
                            <Image src={'/pp.jpg'} alt={'profile picture'} fill={true} className={'rounded-full'} />
                         </div>
                      </div>
@@ -52,7 +52,7 @@ export default function Home() {
                   <p className={'pb-10'}>
                      for the modern web, one line of code at a time.
                   </p>
-                  <div className={'flex flex-row flex-wrap gap-3 pb-10 txt-sm '}>
+                  <div className={'flex flex-col lg:flex-row flex-wrap gap-3 pb-10 txt-sm '}>
                      <p className={'l font-bold text-white text-nowrap '}>Contact :</p>
                      <a href={'https://maps.app.goo.gl/3aAsoYNV3ppCiu6w7'}>
                         <p className={'underline'}>Grenoble</p>
@@ -64,7 +64,7 @@ export default function Home() {
                         <p className={'underline'}>+33 7 81 41 30 42</p>
                      </a>
                   </div>
-                  <div className={'mb-20'}>
+                  <div className={'mb-10 lg:mb-20'}>
                      <a href={'/CV JOACHIM AGERON.pdf'} target={'_blank'}>
                         <p className={'text-white underline font-bold'}>
                            Download my resume {'->'}
@@ -80,7 +80,7 @@ export default function Home() {
                                  <div
                                     className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
                                  <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-indigo-200 group-[.active]:text-indigo-200 transition-all\t'}>{section.id}</h2>
+                                    className={'font-bold text-white text-nowrap group-hover:text-indigo-200 group-[.active]:text-indigo-200 transition-all'}>{section.id}</h2>
                               </div>
                            </a>
                         </li>
@@ -103,7 +103,7 @@ export default function Home() {
                      <h2 className={'text-xl font-bold text-white text-nowrap'}>TECHNICAL TOOLKIT</h2>
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
                   </div>
-                  <div className={'flex gap-14 flex-wrap justify-center lg:justify-start'}>
+                  <div className={'flex gap-10 lg:gap-14 flex-wrap justify-start'}>
                      
                      <article className={'flex gap-3'}>
                         <p className={'text-white'}>JS</p>
@@ -177,7 +177,7 @@ export default function Home() {
                      enrich my <span className={'text-white font-bold'}>creativity</span> and <span
                      className={'text-white font-bold'}>positively </span>.
                   </p>
-                  <p className={'mb-6'}>
+                  <p className={''}>
                      I am constantly on the lookout for new challenges and open to discussions on
                      technological innovations. If you are<span className={'text-white font-bold'}> in search of a motivated developer</span> to
                      bring a new dimension
@@ -193,23 +193,23 @@ export default function Home() {
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
                   </div>
                   <div className={'flex flex-col gap-10'}>
-                     <article className={'flex gap-14'}>
+                     <article className={'flex gap-5 lg:gap-14'}>
                         <div>
                            <p className={'text-nowrap'}>2024 - 2026</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2 text-nowrap'}>ESGI Ingénierie du Web {"->"}</h3>
+                           <h3 className={'text-white font-bold underline pb-2'}>ESGI Ingénierie du Web {"->"}</h3>
                            <p className={'pb-1'}>- Development</p>
                            <p className={'pb-1'}>- Cyber Security</p>
                            <p className={'pb-1'}>- Project Management</p>
                         </div>
                      </article>
-                     <article className={'flex gap-14'}>
+                     <article className={'flex gap-5 lg:gap-14'}>
                         <div className={'text-nowrap'}>
                            <p>2021 - 2024</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2 text-nowrap'}>BUT MMI option
+                           <h3 className={'text-white font-bold underline pb-2'}>BUT MMI option
                               development {"->"}</h3>
                            <p className={'pb-1'}>- Web Development</p>
                            <p className={'pb-1'}>- Communication</p>
@@ -221,7 +221,7 @@ export default function Home() {
                            <p>2018 - 2021</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2 text-nowrap'}>
+                           <h3 className={'text-white font-bold underline pb-2 '}>
                               BAC STI2D option SIN {"->"}
                            </h3>
                         </div>
@@ -234,13 +234,13 @@ export default function Home() {
                      <h2 className={'text-xl font-bold text-white text-nowrap'}>EXPERIENCE</h2>
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
                   </div>
-                  <div className={'flex flex-col gap-20'}>
+                  <div className={'flex flex-col gap-14 lg:gap-20'}>
                      <article>
-                        <div className={'flex gap-4'}>
+                        <div className={'flex flex-col lg:flex-row gap-4'}>
                            <h3 className={'text-white font-bold pb-2 text-nowrap'}>Work-study program at <a
                               className={'underline'} href={'https://www.transfertpro.com/'}>Transfertpro {'->'}</a>
                            </h3>
-                           <p className={'text-nowrap'}>2023 - Present</p>
+                           <p className={'text-nowrap mb-4'}>2023 - Present</p>
                         </div>
                         <p className={'pb-5'}>
                            At TransfertPro, I enhanced their secure data transfer platform and developed my Full Stack
@@ -252,11 +252,11 @@ export default function Home() {
                         </div>
                      </article>
                      <article>
-                        <div className={'flex gap-4'}>
+                        <div className={'flex flex-col lg:flex-row gap-4'}>
                            <h3 className={'text-white font-bold pb-2 text-nowrap'}>Stage at <a
                               className={'underline'} href={'https://www.wallix.com/fr/'}>Wallix {'->'}</a>
                            </h3>
-                           <p className={'text-nowrap'}>2023 - 2 Month</p>
+                           <p className={'text-nowrap mb-4'}>2023 - 2 Month</p>
                         </div>
                         <p className={'pb-5'}>
                            During my internship at Wallix, I developed my front-end development skills by working with
@@ -269,10 +269,10 @@ export default function Home() {
                         </div>
                      </article>
                      <article>
-                        <div className={'flex gap-4'}>
+                        <div className={'flex flex-col lg:flex-row gap-4'}>
                            <h3 className={'text-white font-bold pb-2 text-nowrap'}>Messages application course
                               project</h3>
-                           <p className={'text-nowrap'}>2024 - 3 weeks</p>
+                           <p className={'text-nowrap mb-4'}>2024 - 3 weeks</p>
                         </div>
                         <p className={'pb-5'}>
                            In a course project, I created an instant messaging application using Next.js, leveraging
@@ -285,9 +285,9 @@ export default function Home() {
                         </div>
                      </article>
                      <article>
-                        <div className={'flex gap-4'}>
+                        <div className={'flex flex-col lg:flex-row gap-4'}>
                            <h3 className={'text-white font-bold pb-2 text-nowrap'}>Escape game course project</h3>
-                           <p className={'text-nowrap'}>2024 - 2 month</p>
+                           <p className={'text-nowrap mb-4'}>2024 - 2 month</p>
                         </div>
                         <p className={'pb-5'}>
                            For a course project, we developed an escape game application using React Native, It will be
@@ -299,9 +299,9 @@ export default function Home() {
                         </div>
                      </article>
                      <article>
-                        <div className={'flex gap-4'}>
+                        <div className={'flex flex-col lg:flex-row gap-4'}>
                            <h3 className={'text-white font-bold pb-2 text-nowrap'}>Social media course project</h3>
-                           <p className={'text-nowrap'}>2022 - 1 month</p>
+                           <p className={'text-nowrap mb-4'}>2022 - 1 month</p>
                         </div>
                         <p className={'pb-5'}>
                            For a course project, we built a social media platform using native PHP.</p>
@@ -315,7 +315,7 @@ export default function Home() {
                   
                   </div>
                </section>
-               <footer className={'my-32'}>
+               <footer className={'mt-14 lg:my-32'}>
                   <p>
                      Designed in <span className={'text-white font-bold'}>Figma</span>,
                      built with <span className={'text-white font-bold'}>Next.js</span> and <span
