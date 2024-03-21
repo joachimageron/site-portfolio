@@ -14,6 +14,7 @@ const config: Config = {
       indigo: colors.indigo,
       blue: colors.blue,
       'white': '#ffffff',
+      'main-text':'rgb(176 190 218)'
       
     },
     extend: {

@@ -31,7 +31,7 @@ export default function Home() {
    return (
       <main className="dark">
          <div
-            className="z-10 justify-center bg-darkbg px-6 py-12 text-indigo-200 flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
+            className="z-10 justify-center bg-darkbg px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
             <CursorHalo/>
             <header
                className="max-w-2xl w-full max-w-2xl relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
@@ -80,7 +80,7 @@ export default function Home() {
                                  <div
                                     className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
                                  <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-indigo-200 group-[.active]:text-indigo-200 transition-all'}>{section.id}</h2>
+                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>{section.id}</h2>
                               </div>
                            </a>
                         </li>
