@@ -31,11 +31,11 @@ export default function Home() {
    return (
       <main className="dark">
          <div
-            className="z-10 bg-darkbg px-6 py-12 text-indigo-200 flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
-            <CursorHalo/>
+            className="z-10 justify-center bg-darkbg px-6 py-12 text-indigo-200 flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
             
             <header
                className="max-w-2xl w-full max-w-2xl relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
+            <CursorHalo/>
                <div>
                      <div className={'flex gap-10 mb-6'}>
                         <div>
