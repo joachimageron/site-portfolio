@@ -31,7 +31,7 @@ export default function Home() {
    return (
       <main className="dark">
          <div
-            className="z-10 dark:bg-darkbg px-6 py-12 text-indigo-200 flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
+            className="z-10 bg-darkbg px-6 py-12 text-indigo-200 flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
             <CursorHalo/>
             
             <header
