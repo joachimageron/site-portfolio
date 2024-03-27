@@ -6,11 +6,9 @@ import CursorHalo from "@/app/ui/cursorHalo";
 
 export default function Home() {
    const [activeId, setActiveId] = useState('')
-   const [sections, setSections] = useState<HTMLElement[]>([])
    
    
    useEffect(() => {
-      setSections(Array.from(document.querySelectorAll('section')))
       
       
       const observer = new IntersectionObserver((entries) => {
@@ -30,22 +28,23 @@ export default function Home() {
    
    return (
       <main className="dark">
+         <CursorHalo/>
          <div
             className="z-10 justify-center bg-darkbg px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
-            <CursorHalo/>
-            <header
-               className="max-w-2xl w-full max-w-2xl relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
             
+            <header
+               className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
+               
                <div>
-                     <div className={'flex gap-10 mb-6'}>
-                        <div>
-                           <h1 className='text-4xl font-bold pb-4 text-white'>Ageron Joachim</h1>
-                           <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
-                        </div>
-                        <div className={'rounded-full w-28 h-28 relative hidden lg:block'}>
-                           <Image src={'/pp.jpg'} alt={'profile picture'} fill={true} className={'rounded-full'} />
-                        </div>
+                  <div className={'flex gap-10 mb-6'}>
+                     <div>
+                        <h1 className='text-4xl font-bold pb-4 text-white'>Ageron Joachim</h1>
+                        <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
                      </div>
+                     <div className={'rounded-full w-28 h-28 relative hidden lg:block'}>
+                        <Image src={'/pp.jpg'} alt={'profile picture'} fill={true} className={'rounded-full'}/>
+                     </div>
+                  </div>
                   <p>
                      Crafting seamless, robust, and cutting-edge solutions
                   </p>
@@ -72,19 +71,52 @@ export default function Home() {
                      </a>
                   </div>
                   <ul className={'hidden text-sm lg:block'}>
-                     {sections.map(section => (
-                        <li key={section.id}>
-                           <a href={`#${section.id}`}>
+
+                        <li>
+                           <a href={`#TECHNICAL TOOLKIT`}>
                               <div
-                                 className={`group flex gap-3 mb-10 w-min ${activeId === section.id ? 'active' : ''}`}>
+                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'TECHNICAL TOOLKIT' ? 'active' : ''}`}>
                                  <div
                                     className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
                                  <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>{section.id}</h2>
+                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>TECHNICAL TOOLKIT</h2>
                               </div>
                            </a>
                         </li>
-                     ))}
+                        <li>
+                           <a href={`#ABOUT`}>
+                              <div
+                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'ABOUT' ? 'active' : ''}`}>
+                                 <div
+                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                                 <h2
+                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>ABOUT</h2>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href={`#EDUCATION`}>
+                              <div
+                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'EDUCATION' ? 'active' : ''}`}>
+                                 <div
+                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                                 <h2
+                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EDUCATION</h2>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href={`#EXPERIENCE`}>
+                              <div
+                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'EXPERIENCE' ? 'active' : ''}`}>
+                                 <div
+                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                                 <h2
+                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EXPERIENCE</h2>
+                              </div>
+                           </a>
+                        </li>
+
                   
                   </ul>
                </div>
@@ -162,7 +194,8 @@ export default function Home() {
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
                   </div>
                   <p className={'mb-6'}>
-                     Hello, I{"\'"}m <span className={'text-white font-bold'}>Joachim Ageron</span>, a Full Stack developer
+                     Hello, I{"\'"}m <span className={'text-white font-bold'}>Joachim Ageron</span>, a Full Stack
+                     developer
                      passionate about the art of turning ideas into
                      tangible digital solutions. My journey in web development began with simple curiosity and has
                      flourished into a career dedicated to exploring new technologies, such as <span
@@ -182,7 +215,8 @@ export default function Home() {
                      technological innovations. If you are<span className={'text-white font-bold'}> in search of a motivated developer</span> to
                      bring a new dimension
                      to your projects or for an exchange of ideas on the future of the web, I would be delighted to meet
-                     you. Together, let{"\'"}s explore the possibilities that web development offers to turn your visions into
+                     you. Together, let{"\'"}s explore the possibilities that web development offers to turn your
+                     visions into
                      reality.
                   </p>
                
@@ -198,7 +232,9 @@ export default function Home() {
                            <p className={'text-nowrap'}>2024 - 2026</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2'}>ESGI Ingénierie du Web {"->"}</h3>
+                           <a href={'https://www.esgi.fr/programmes/ingenierie-web.html'}>
+                              <h3 className={'text-white font-bold underline pb-2'}>ESGI Ingénierie du Web {"->"}</h3>
+                           </a>
                            <p className={'pb-1'}>- Development</p>
                            <p className={'pb-1'}>- Cyber Security</p>
                            <p className={'pb-1'}>- Project Management</p>
@@ -209,8 +245,10 @@ export default function Home() {
                            <p>2021 - 2024</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2'}>BUT MMI option
-                              development {"->"}</h3>
+                           <a href={'https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/but-bachelor-universitaire-de-technologie-CBB/but-metiers-du-multimedia-et-de-l-internet-KI4YX5MN/parcours-developpement-web-et-dispositifs-interactifs-KWDMXUGX.html'}>
+                              <h3 className={'text-white font-bold underline pb-2'}>BUT MMI option
+                                 development {"->"}</h3>
+                           </a>
                            <p className={'pb-1'}>- Web Development</p>
                            <p className={'pb-1'}>- Communication</p>
                            <p className={'pb-1'}>- Audiovisuel</p>
@@ -221,9 +259,11 @@ export default function Home() {
                            <p>2018 - 2021</p>
                         </div>
                         <div>
-                           <h3 className={'text-white font-bold underline pb-2 '}>
-                              BAC STI2D option SIN {"->"}
-                           </h3>
+                           <a href={'https://lyceereneperrin.fr/lycee-general-et-technologique/'}>
+                              <h3 className={'text-white font-bold underline pb-2 '}>
+                                 BAC STI2D option SIN {"->"}
+                              </h3>
+                           </a>
                         </div>
                      </article>
                   
@@ -322,7 +362,7 @@ export default function Home() {
                      className={'text-white font-bold'}>Tailwind CSS</span>,
                      deployed with <span className={'text-white font-bold'}>Vercel</span>.
                   </p>
-                  
+               
                </footer>
             </div>
          </div>

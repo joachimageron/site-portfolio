@@ -11,6 +11,6 @@ export default function CursorHalo() {
       });
    }, []);
    return (
-      <div id={'halo'} className={'cursor-halo hidden lg:block'}/>
+      <div id={'halo'} className={'cursor-halo hidden lg:block'} style={{ pointerEvents: "none" }}/>
    )
 }
