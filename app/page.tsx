@@ -36,13 +36,13 @@ export default function Home() {
                className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
                
                <div>
-                  <div className={'flex gap-10 mb-6'}>
+                  <div className={'flex gap-8 mb-6'}>
                      <div>
                         <h1 className='text-4xl font-bold pb-4 text-white'>Ageron Joachim</h1>
                         <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
                      </div>
-                     <div className={'rounded-full w-28 h-28 relative hidden lg:block'}>
-                        <Image src={'/pp.png'} alt={'profile picture'} fill={true} className={'rounded-full'}/>
+                     <div className={'rounded-full w-28 h-28 relative hidden lg:block -mt-4'}>
+                        <Image src={'/pp.png'} alt={'profile picture'} fill={true} className={'rounded-full object-cover '}/>
                      </div>
                   </div>
                   <p>
@@ -194,7 +194,7 @@ export default function Home() {
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
                   </div>
                   <p className={'mb-6'}>
-                     Hello, I{"\'"}m <span className={'text-white font-bold'}>Joachim Ageron</span>, a Full Stack
+                     Hello, I&apos;m <span className={'text-white font-bold'}>Joachim Ageron</span>, a Full Stack
                      developer
                      passionate about the art of turning ideas into
                      tangible digital solutions. My journey in web development began with simple curiosity and has
@@ -215,7 +215,7 @@ export default function Home() {
                      technological innovations. If you are<span className={'text-white font-bold'}> in search of a motivated developer</span> to
                      bring a new dimension
                      to your projects or for an exchange of ideas on the future of the web, I would be delighted to meet
-                     you. Together, let{"\'"}s explore the possibilities that web development offers to turn your
+                     you. Together, let&apos;s explore the possibilities that web development offers to turn your
                      visions into
                      reality.
                   </p>
