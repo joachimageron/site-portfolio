@@ -42,7 +42,8 @@ export default function Home() {
                         <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
                      </div>
                      <div className={'rounded-full w-28 h-28 relative hidden lg:block -mt-4'}>
-                        <Image src={'/pp.png'} alt={'profile picture'} fill={true} className={'rounded-full object-cover '}/>
+                        <Image src={'/pp.png'} alt={'profile picture'} fill={true}
+                               className={'rounded-full object-cover '}/>
                      </div>
                   </div>
                   <p>
@@ -71,52 +72,53 @@ export default function Home() {
                      </a>
                   </div>
                   <ul className={'hidden text-sm lg:block'}>
-
-                        <li>
-                           <a href={`#TECHNICAL TOOLKIT`}>
+                     
+                     <li>
+                        <a href={`#TECHNICAL TOOLKIT`}>
+                           <div
+                              className={`group flex gap-3 mb-10 w-min ${activeId === 'TECHNICAL TOOLKIT' ? 'active' : ''}`}>
                               <div
-                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'TECHNICAL TOOLKIT' ? 'active' : ''}`}>
-                                 <div
-                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
-                                 <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>TECHNICAL TOOLKIT</h2>
-                              </div>
-                           </a>
-                        </li>
-                        <li>
-                           <a href={`#ABOUT`}>
+                                 className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                              <h2
+                                 className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>TECHNICAL
+                                 TOOLKIT</h2>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href={`#ABOUT`}>
+                           <div
+                              className={`group flex gap-3 mb-10 w-min ${activeId === 'ABOUT' ? 'active' : ''}`}>
                               <div
-                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'ABOUT' ? 'active' : ''}`}>
-                                 <div
-                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
-                                 <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>ABOUT</h2>
-                              </div>
-                           </a>
-                        </li>
-                        <li>
-                           <a href={`#EDUCATION`}>
+                                 className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                              <h2
+                                 className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>ABOUT</h2>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href={`#EDUCATION`}>
+                           <div
+                              className={`group flex gap-3 mb-10 w-min ${activeId === 'EDUCATION' ? 'active' : ''}`}>
                               <div
-                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'EDUCATION' ? 'active' : ''}`}>
-                                 <div
-                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
-                                 <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EDUCATION</h2>
-                              </div>
-                           </a>
-                        </li>
-                        <li>
-                           <a href={`#EXPERIENCE`}>
+                                 className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                              <h2
+                                 className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EDUCATION</h2>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href={`#EXPERIENCE`}>
+                           <div
+                              className={`group flex gap-3 mb-10 w-min ${activeId === 'EXPERIENCE' ? 'active' : ''}`}>
                               <div
-                                 className={`group flex gap-3 mb-10 w-min ${activeId === 'EXPERIENCE' ? 'active' : ''}`}>
-                                 <div
-                                    className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
-                                 <h2
-                                    className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EXPERIENCE</h2>
-                              </div>
-                           </a>
-                        </li>
-
+                                 className={'bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200'}/>
+                              <h2
+                                 className={'font-bold text-white text-nowrap group-hover:text-main-text group-[.active]:text-main-text transition-all'}>EXPERIENCE</h2>
+                           </div>
+                        </a>
+                     </li>
+                  
                   
                   </ul>
                </div>
@@ -360,9 +362,10 @@ export default function Home() {
                      Designed in <span className={'text-white font-bold'}>Figma</span>,
                      built with <span className={'text-white font-bold'}>Next.js</span> and <span
                      className={'text-white font-bold'}>Tailwind CSS</span>,
-                     deployed with <span className={'text-white font-bold'}>Vercel</span>.
+                     deployed with <span className={'text-white font-bold'}>Vercel</span>. Avatar made by <a
+                     href={'https://www.instagram.com/agbi.png/'}
+                     className={'text-white font-bold underline'}>@agbi.png{"->"}</a>.
                   </p>
-               
                </footer>
             </div>
          </div>
