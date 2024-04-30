@@ -42,7 +42,7 @@ export default function Home() {
                         <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
                      </div>
                      <div className={'rounded-full w-28 h-28 relative hidden lg:block'}>
-                        <Image src={'/pp.jpg'} alt={'profile picture'} fill={true} className={'rounded-full'}/>
+                        <Image src={'/pp.png'} alt={'profile picture'} fill={true} className={'rounded-full'}/>
                      </div>
                   </div>
                   <p>
