@@ -49,14 +49,16 @@ export default function Home() {
                   <p>
                      Crafting seamless, robust, and cutting-edge solutions
                   </p>
-                  <p className={'pb-10'}>
+                  <p>
                      for the modern web, one line of code at a time.
                   </p>
-                  <div className={'flex flex-col lg:flex-row flex-wrap gap-3 pb-10 txt-sm '}>
+                  <p className={'mt-5'}>
+                     <a className={'underline'} href={'https://maps.app.goo.gl/3aAsoYNV3ppCiu6w7'}>
+                        Grenoble
+                     </a>, France
+                  </p>
+                  <div className={'flex flex-col lg:flex-row flex-wrap gap-3 pb-10 txt-sm mt-10'}>
                      <p className={'l font-bold text-white text-nowrap '}>Contact :</p>
-                     <a href={'https://maps.app.goo.gl/3aAsoYNV3ppCiu6w7'}>
-                        <p className={'underline'}>Grenoble</p>
-                     </a>
                      <a href={'mailto:ageron.joachim@gmail.com'}>
                         <p className={'underline'}>ageron.joachim@gmail.com</p>
                      </a>
