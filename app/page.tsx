@@ -33,7 +33,7 @@ export default function Home() {
             className="z-10 justify-center bg-darkbg px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
             
             <header
-               className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between	">
+               className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-16 lg:flex lg:flex-col lg:justify-between	">
                
                <div>
                   <div className={'flex gap-8 mb-6'}>
@@ -53,8 +53,8 @@ export default function Home() {
                      for the modern web, one line of code at a time.
                   </p>
                   <p className={'mt-5'}>
-                     <a className={'underline'} href={'https://maps.app.goo.gl/3aAsoYNV3ppCiu6w7'}>
-                        Grenoble
+                     <a className={'underline'} href={'https://maps.app.goo.gl/MMUkjZXHrV4B5x4s6'}>
+                        Lyon
                      </a>, France
                   </p>
                   <div className={'flex flex-col lg:flex-row flex-wrap gap-3 pb-10 txt-sm mt-10'}>
@@ -66,7 +66,7 @@ export default function Home() {
                         <p className={'underline'}>+33 7 81 41 30 42</p>
                      </a>
                   </div>
-                  <div className={'mb-10 lg:mb-20'}>
+                  <div className={'mb-10 lg:mb-16'}>
                      <a href={'/CV JOACHIM AGERON.pdf'} target={'_blank'}>
                         <p className={'text-white underline font-bold'}>
                            Download my resume {'->'}
@@ -134,7 +134,7 @@ export default function Home() {
                </div>
             </header>
             <div className={'max-w-2xl lg:w-full'}>
-               <section id={'TECHNICAL TOOLKIT'} className={'pt-32 lg:pt-24'}>
+               <section id={'TECHNICAL TOOLKIT'} className={'pt-32 lg:pt-16'}>
                   <div className={'flex gap-5 mb-10'}>
                      <h2 className={'text-xl font-bold text-white text-nowrap'}>TECHNICAL TOOLKIT</h2>
                      <div className={'bg-white w-full h-0.5 rounded-full self-center'}/>
@@ -359,7 +359,7 @@ export default function Home() {
                   
                   </div>
                </section>
-               <footer className={'mt-14 lg:my-32'}>
+               <footer className={'mt-14 lg:mt-32 lg:mb-16'}>
                   <p className={'text-sm'}>
                      Designed in <span className={'text-white font-bold'}>Figma</span>,
                      built with <span className={'text-white font-bold'}>Next.js</span> and <span
