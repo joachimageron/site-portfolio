@@ -287,7 +287,7 @@ export default function Home() {
               <article>
                 <div className={'flex flex-col lg:flex-row gap-4'}>
                   <h3 className={'text-white font-bold pb-2 text-nowrap'}>Personal project <a
-                    className={'underline'} href={'https://github.com/joachimageron/bypolarmedia2'}>BypolarMedia {'->'}</a>
+                    className={'underline'} href={'https://bypolar.ageronjoachim.com'}>BypolarMedia {'->'}</a>
                   </h3>
                   <p className={'text-nowrap mb-4'}>2024 - Present</p>
                 </div>
