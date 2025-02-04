@@ -38,7 +38,7 @@ export default function Home() {
           <div>
             <div className={'flex gap-8 mb-6'}>
               <div>
-                <h1 className='text-4xl font-bold pb-4 text-white'>Ageron Joachim</h1>
+                <h1 className='text-4xl font-bold pb-4 text-white'>AGERON Joachim</h1>
                 <h2 className='text-2xl font-bold text-white'>Full stack developer</h2>
               </div>
               <div className={'rounded-full w-28 h-28 relative hidden lg:block -mt-4'}>
