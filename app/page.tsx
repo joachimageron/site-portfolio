@@ -573,9 +573,7 @@ export default function Home() {
             <p className={"text-sm"}>
               Designed in <span className={"text-white font-bold"}>Figma</span>,
               built with <span className={"text-white font-bold"}>Next.js</span>{" "}
-              and <span className={"text-white font-bold"}>Tailwind CSS</span>,
-              deployed with{" "}
-              <span className={"text-white font-bold"}>Vercel</span>. Avatar
+              and <span className={"text-white font-bold"}>Tailwind CSS</span>. Avatar
               made by{" "}
               <a
                 href={"https://www.instagram.com/agbi.png/"}
