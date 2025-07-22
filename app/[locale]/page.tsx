@@ -1,8 +1,12 @@
 
 import Providers from "../providers";
 import HomePage from "./homepage";
+import { Inter } from "next/font/google";
 
-const LOCALES = ["en", "fr"];
+const inter = Inter({ subsets: ["latin"] });
+
+
+const LOCALES = ["en"];
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({
@@ -30,7 +34,7 @@ export default async function Home({ params }: Props) {
 
   return (
     <html lang={awaitedParams.locale}>
-      <body>
+      <body className={inter.className}>
         <Providers
             locale={awaitedParams.locale}
             messages={messages}
