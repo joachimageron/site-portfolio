@@ -17,7 +17,11 @@ async function getMessages(locale: string) {
   return messageModule.default;
 }
 
-export default async function Home({params}: Readonly<{params: {locale: string}}>) {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Home({ params }: Props) {
 
   const awaitedParams = await params;
 
