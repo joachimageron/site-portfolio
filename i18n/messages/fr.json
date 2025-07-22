@@ -1,0 +1,106 @@
+{
+  "header": {
+    "name": "AGERON Joachim",
+    "title": "Développeur Full stack",
+    "tagline1": "Créer des solutions fluides, robustes et avant-gardistes",
+    "tagline2": "pour le web moderne, une ligne de code à la fois.",
+    "location": "Lyon",
+    "country": "France",
+    "contact": "Contact :",
+    "email": "ageron.joachim@gmail.com",
+    "phone": "+33 7 81 41 30 42",
+    "resume": "Télécharger mon CV"
+  },
+  "navigation": {
+    "technicalToolkit": "BOÎTE À OUTILS TECHNIQUE",
+    "about": "À PROPOS",
+    "education": "FORMATION",
+    "experience": "EXPÉRIENCE"
+  },
+  "skills": {
+    "professionalPractitioner": "Praticien Professionnel",
+    "hobbyistHacker": "Hacker Amateur",
+    "dippingToes": "Premiers Pas"
+  },
+  "about": {
+    "intro": "Bonjour, je suis",
+    "description1": ", un développeur Full Stack passionné par l'art de transformer les idées en solutions numériques tangibles. Mon parcours dans le développement web a commencé par une simple curiosité et s'est épanoui en une carrière dédiée à l'exploration de nouvelles technologies, telles que",
+    "description2": ". Grâce à mes expériences chez",
+    "description3": "et",
+    "description4": ", j'ai développé et maintenu des architectures robustes en",
+    "description5": ", tout en créant des applications web sécurisées et performantes. Mes projets personnels, comme la construction d'un réseau social avec",
+    "description6": "et",
+    "description7": ", démontrent ma capacité à concevoir et implémenter des fonctionnalités innovantes.",
+    "personal1": "En dehors du monde numérique, je trouve mon inspiration dans la tranquillité de la nature, la profondeur de la musique et la compagnie enrichissante de mes amis. Ces passions, loin de me détourner de ma profession, enrichissent ma",
+    "personal2": "créativité",
+    "personal3": "et mon",
+    "personal4": "optimisme",
+    "conclusion1": "Actuellement en Master de Développement Web à Lyon, je suis constamment à la recherche de nouveaux défis et ouvert aux discussions sur les innovations technologiques. Si vous êtes",
+    "conclusion2": "à la recherche d'un développeur motivé",
+    "conclusion3": "pour apporter une nouvelle dimension à vos projets ou pour échanger des idées sur l'avenir du web, je serais ravi de vous rencontrer. Ensemble, explorons les possibilités que le développement web offre pour transformer vos visions en réalité."
+  },
+  "education": {
+    "esgi": {
+      "title": "ESGI Ingénierie du Web",
+      "item1": "- Développement",
+      "item2": "- Cyber Sécurité",
+      "item3": "- Gestion de Projet"
+    },
+    "but": {
+      "title": "BUT MMI option développement Web",
+      "item1": "- Développement Web",
+      "item2": "- Communication",
+      "item3": "- Audiovisuel"
+    },
+    "bac": {
+      "title": "BAC STI2D option SIN"
+    }
+  },
+  "experience": {
+    "bypolar": {
+      "title": "Projet personnel",
+      "link": "BypolarMedia",
+      "period": "2024 - Présent",
+      "description": "Une refonte de mon projet de réseau social, cette fois en utilisant Next.js et Prisma, pour améliorer mes compétences dans ces technologies."
+    },
+    "transfertpro": {
+      "title": "Alternance chez",
+      "link": "Transfertpro",
+      "period": "2023 - Présent",
+      "description": "Chez TransfertPro, j'ai amélioré leur plateforme de transfert de données sécurisé et développé mes compétences en développement Full Stack, particulièrement en C#."
+    },
+    "cypress": {
+      "title": "Projet Cypress from scratch chez",
+      "link": "Transfertpro",
+      "period": "2024 - 3 mois",
+      "description": "Chez TransfertPro, j'ai construit un projet Cypress complet à partir de zéro. De plus, j'ai créé des scripts PowerShell pour tester périodiquement toutes les infrastructures et implémenté un système de mail."
+    },
+    "wallix": {
+      "title": "Stage chez",
+      "link": "Wallix",
+      "period": "2023 - 2 mois",
+      "description": "Pendant mon stage chez Wallix, j'ai développé mes compétences en développement front-end en travaillant avec React et en créant des thèmes SCSS, enrichissant l'interface backend de leurs solutions de sécurité."
+    },
+    "messages": {
+      "title": "Projet scolaire d'application de messages",
+      "period": "2024 - 3 semaines",
+      "description": "Dans un projet de cours, j'ai créé une application de messagerie instantanée en utilisant Next.js, tirant parti du rendu côté serveur pour une communication en temps réel et une expérience utilisateur améliorée."
+    },
+    "escapeGame": {
+      "title": "Projet scolaire escape game",
+      "period": "2024 - 2 mois",
+      "description": "Pour un projet de cours, nous avons développé une application d'escape game en utilisant React Native, Elle sera jouée en juin."
+    },
+    "socialMedia": {
+      "title": "Projet scolaire réseau social",
+      "period": "2022 - 1 mois",
+      "description": "Pour un projet de cours, nous avons construit une plateforme de réseau social en utilisant PHP natif."
+    }
+  },
+  "footer": {
+    "designed": "Conçu avec",
+    "built": "construit avec",
+    "and": "et",
+    "avatar": "Avatar créé par"
+  }
+}

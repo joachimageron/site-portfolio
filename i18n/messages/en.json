@@ -1,0 +1,106 @@
+{
+  "header": {
+    "name": "AGERON Joachim",
+    "title": "Full stack developer",
+    "tagline1": "Crafting seamless, robust, and cutting-edge solutions",
+    "tagline2": "for the modern web, one line of code at a time.",
+    "location": "Lyon",
+    "country": "France",
+    "contact": "Contact :",
+    "email": "ageron.joachim@gmail.com",
+    "phone": "+33 7 81 41 30 42",
+    "resume": "Download my resume"
+  },
+  "navigation": {
+    "technicalToolkit": "TECHNICAL TOOLKIT",
+    "about": "ABOUT",
+    "education": "EDUCATION",
+    "experience": "EXPERIENCE"
+  },
+  "skills": {
+    "professionalPractitioner": "Professional Practitioner",
+    "hobbyistHacker": "Hobbyist Hacker",
+    "dippingToes": "Dipping Toes"
+  },
+  "about": {
+    "intro": "Hello, I'm",
+    "description1": ", a Full Stack developer passionate about the art of turning ideas into tangible digital solutions. My journey in web development began with simple curiosity and has flourished into a career dedicated to exploring new technologies, such as",
+    "description2": ". Through my experiences at",
+    "description3": "and",
+    "description4": ", I have developed and maintained robust architectures in",
+    "description5": ", while creating secure and high-performance web applications. My personal projects, such as building a social network with",
+    "description6": "and",
+    "description7": ", demonstrate my ability to design and implement innovative features.",
+    "personal1": "Outside the digital world, I find my inspiration in the tranquility of nature, the depth of music, and the enriching company of my friends. These passions, far from diverting me from my profession, enhance my",
+    "personal2": "creativity",
+    "personal3": "and",
+    "personal4": "optimism",
+    "conclusion1": "Currently pursuing a Master's in Web Development in Lyon, I am constantly on the lookout for new challenges and open to discussions on technological innovations. If you are",
+    "conclusion2": "in search of a motivated developer",
+    "conclusion3": "to bring a new dimension to your projects or to exchange ideas on the future of the web, I would be delighted to meet you. Together, let's explore the possibilities that web development offers to turn your visions into reality."
+  },
+  "education": {
+    "esgi": {
+      "title": "ESGI Ingénierie du Web",
+      "item1": "- Development",
+      "item2": "- Cyber Security",
+      "item3": "- Project Management"
+    },
+    "but": {
+      "title": "BUT MMI option development Web",
+      "item1": "- Web Development",
+      "item2": "- Communication",
+      "item3": "- Audiovisual"
+    },
+    "bac": {
+      "title": "BAC STI2D option SIN"
+    }
+  },
+  "experience": {
+    "bypolar": {
+      "title": "Personal project",
+      "link": "BypolarMedia",
+      "period": "2024 - Present",
+      "description": "A remake of my social media project, this time using Next.js and Prisma, to enhance my skills in these technologies."
+    },
+    "transfertpro": {
+      "title": "Work-study program at",
+      "link": "Transfertpro",
+      "period": "2023 - Present",
+      "description": "At TransfertPro, I enhanced their secure data transfer platform and developed my Full Stack development skills, particularly in C#."
+    },
+    "cypress": {
+      "title": "Cypress project from scratch at",
+      "link": "Transfertpro",
+      "period": "2024 - 3 months",
+      "description": "At TransfertPro, I built a comprehensive Cypress project from the ground up. Additionally, I created PowerShell scripts to periodically test all infrastructures and implemented a mail system."
+    },
+    "wallix": {
+      "title": "Stage at",
+      "link": "Wallix",
+      "period": "2023 - 2 months",
+      "description": "During my internship at Wallix, I developed my front-end development skills by working with React and creating SCSS themes, enriching the backend interface of their security solutions."
+    },
+    "messages": {
+      "title": "Messages application course project",
+      "period": "2024 - 3 weeks",
+      "description": "In a course project, I created an instant messaging application using Next.js, leveraging server-side rendering for real-time communication and an enhanced user experience."
+    },
+    "escapeGame": {
+      "title": "Escape game course project",
+      "period": "2024 - 2 months",
+      "description": "For a course project, we developed an escape game application using React Native, It will be played in june."
+    },
+    "socialMedia": {
+      "title": "Social media course project",
+      "period": "2022 - 1 month",
+      "description": "For a course project, we built a social media platform using native PHP."
+    }
+  },
+  "footer": {
+    "designed": "Designed in",
+    "built": "built with",
+    "and": "and",
+    "avatar": "Avatar made by"
+  }
+}
