@@ -3,8 +3,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import PlausibleProvider from "next-plausible";
 
-const timeZone = 'Europe/Paris';
-
+const timeZone = "Europe/Paris";
 
 function Providers({
   children,
@@ -16,10 +15,21 @@ function Providers({
   messages: Record<string, string>;
 }) {
   return (
-    <PlausibleProvider domain="ageronjoachim.com" trackOutboundLinks>
-    <NextIntlClientProvider timeZone={timeZone} locale={locale} messages={messages}>
-      {children}
-    </NextIntlClientProvider>
+    <PlausibleProvider
+      selfHosted={true}
+      customDomain="plausible.ageronjoachim.com"
+      domain="ageronjoachim.com"
+      trackOutboundLinks
+      trackFileDownloads
+      trackLocalhost={false}
+    >
+      <NextIntlClientProvider
+        timeZone={timeZone}
+        locale={locale}
+        messages={messages}
+      >
+        {children}
+      </NextIntlClientProvider>
     </PlausibleProvider>
   );
 }
