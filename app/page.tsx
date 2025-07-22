@@ -1,4 +1,4 @@
-import HomePage from "./[locale]/homepage";
+import HomePage from "./ui/homepage";
 import { Inter } from "next/font/google";
 import Providers from "./providers";
 
@@ -14,16 +14,13 @@ async function getMessages(locale: string) {
 }
 
 export default async function Home() {
-    const messages = await getMessages(DEFAULT_LOCALE);
+  const messages = await getMessages(DEFAULT_LOCALE);
 
   return (
     <html lang={DEFAULT_LOCALE}>
       <body className={inter.className}>
-        <Providers
-            locale={DEFAULT_LOCALE}
-            messages={messages}
-        >
-        <HomePage />
+        <Providers locale={DEFAULT_LOCALE} messages={messages}>
+          <HomePage />
         </Providers>
       </body>
     </html>

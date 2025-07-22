@@ -1,10 +1,8 @@
-
 import Providers from "../providers";
-import HomePage from "./homepage";
+import HomePage from "../ui/homepage";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 const LOCALES = ["en"];
 
@@ -26,23 +24,17 @@ type Props = {
 };
 
 export default async function Home({ params }: Props) {
-
   const awaitedParams = await params;
 
   const messages = await getMessages(awaitedParams.locale);
 
-
   return (
     <html lang={awaitedParams.locale}>
       <body className={inter.className}>
-        <Providers
-            locale={awaitedParams.locale}
-            messages={messages}
-        >
-        <HomePage />
+        <Providers locale={awaitedParams.locale} messages={messages}>
+          <HomePage />
         </Providers>
       </body>
     </html>
   );
-
 }
