@@ -1,6 +1,7 @@
 "use client";
 
 import { NextIntlClientProvider } from "next-intl";
+import PlausibleProvider from "next-plausible";
 
 const timeZone = 'Europe/Paris';
 
@@ -15,9 +16,11 @@ function Providers({
   messages: Record<string, string>;
 }) {
   return (
+    <PlausibleProvider domain="ageronjoachim.com" trackOutboundLinks>
     <NextIntlClientProvider timeZone={timeZone} locale={locale} messages={messages}>
       {children}
     </NextIntlClientProvider>
+    </PlausibleProvider>
   );
 }
 
