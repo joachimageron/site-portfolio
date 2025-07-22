@@ -1,6 +1,7 @@
 import HomePage from "./ui/homepage";
 import { Inter } from "next/font/google";
 import Providers from "./providers";
+import Matomo from "./ui/components/Matomo";
 
 const DEFAULT_LOCALE = "fr"; // Default locale, can be changed based on user preference
 
@@ -19,6 +20,7 @@ export default async function Home() {
   return (
     <html lang={DEFAULT_LOCALE}>
       <body className={inter.className}>
+        <Matomo />
         <Providers locale={DEFAULT_LOCALE} messages={messages}>
           <HomePage />
         </Providers>

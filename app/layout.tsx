@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Matomo from "./ui/components/Matomo";
 
 export const metadata: Metadata = {
   title: "Ageron Joachim",
@@ -15,7 +14,6 @@ export default function RootLayout({
   return (
     <>
       {children}
-      <Matomo />
     </>
   );
 }
