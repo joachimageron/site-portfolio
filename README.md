@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Site Portfolio
 
-## Getting Started
+Ce projet est un site portfolio développé avec [Next.js](https://nextjs.org/) et [React](https://react.dev/). Il présente mes réalisations, compétences et expériences professionnelles avec support multilingue.
 
-First, run the development server:
+## Fonctionnalités
+
+- Page d'accueil avec présentation personnelle
+- Section compétences techniques avec niveaux d'expertise
+- Section éducation/formation
+- Section expérience professionnelle et projets
+- Navigation sticky avec scroll tracking
+- Support multilingue avec next-intl
+- Design responsive avec Tailwind CSS
+- Effets visuels interactifs (cursor halo)
+- Liens vers réseaux sociaux et CV
+
+## Technologies utilisées
+
+- **Framework**: Next.js 15.4.2 avec Turbopack
+- **UI**: React 19.1.0, Tailwind CSS
+- **Internationalisation**: next-intl
+- **Icônes**: React Icons
+- **TypeScript**: Support complet
+- **Styling**: Tailwind CSS avec thème sombre
+
+## Structure du projet
+
+- `app/` : Application Next.js (App Router)
+  - `ui/` : Composants UI
+    - `components/` : Composants réutilisables
+    - `homepage.tsx` : Page d'accueil principale
+  - `page.tsx` : Point d'entrée de l'application
+  - `layout.tsx` : Layout racine
+  - `providers.tsx` : Providers (internationalisation)
+  - `globals.css` : Styles globaux
+- `i18n/` : Configuration et messages d'internationalisation
+- `public/` : Fichiers statiques (images, CV, etc.)
+- `package.json` : Dépendances et scripts
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/votre-utilisateur/site-portfolio.git
+cd site-portfolio
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Démarrage en développement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Build pour la production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `pnpm dev` : Démarrage en mode développement avec Turbopack
+- `pnpm build` : Build de production
+- `pnpm start` : Démarrage du serveur de production
+- `pnpm lint` : Vérification du code avec ESLint
 
-## Deploy on Vercel
+## Fonctionnalités principales
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Navigation intelligente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Navigation sticky qui suit automatiquement la section active
+- Scroll tracking avec Intersection Observer
+
+### Sections du portfolio
+
+- **Technical Toolkit** : Compétences techniques avec niveaux
+- **About** : Présentation personnelle détaillée
+- **Education** : Parcours académique
+- **Experience** : Expériences professionnelles et projets
+
+### Internationalisation
+
+- Support multilingue avec next-intl
+- Messages organisés par locale dans `i18n/messages/`
+
+## Personnalisation
+
+1. Modifiez les données dans `app/ui/homepage.tsx` (compétences, expériences, formations)
+2. Ajustez les traductions dans `i18n/messages/`
+3. Personnalisez les styles dans `app/globals.css` et les composants
+4. Remplacez les images dans `public/`
+
+## Déploiement
+
+Le projet est optimisé pour le déploiement sur Vercel, mais peut être déployé sur tout hébergeur supportant Next.js.
