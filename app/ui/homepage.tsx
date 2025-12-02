@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import CursorHalo from "@/app/ui/components/cursorHalo";
 import Navigation from "@/app/ui/components/Navigation";
+import LanguageSwitcher from "@/app/ui/components/LanguageSwitcher";
 import SectionHeader from "@/app/ui/components/SectionHeader";
 import SkillItem from "@/app/ui/components/SkillItem";
 import EducationItem from "@/app/ui/components/EducationItem";
@@ -13,6 +14,7 @@ import SocialLinks from "@/app/ui/components/SocialLinks";
 export default function HomePage() {
   const [activeId, setActiveId] = useState("");
   const t = useTranslations();
+  const locale = useLocale();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -24,9 +26,8 @@ export default function HomePage() {
         });
       },
       {
-        rootMargin: `-${window.innerHeight * 0.2 - 2}px 0px -${
-          window.innerHeight * 0.8 - 2
-        }px 0px`,
+        rootMargin: `-${window.innerHeight * 0.2 - 2}px 0px -${window.innerHeight * 0.8 - 2
+          }px 0px`,
       }
     );
     document.querySelectorAll("section").forEach((section) => {
@@ -173,13 +174,17 @@ export default function HomePage() {
               </a>
             </div>
             <div className="mb-10 lg:mb-16">
-              <a href="/CV JOACHIM AGERON.pdf" target="_blank">
+              <a
+                href={locale === "fr" ? "/JOACHIM AGERON fr.pdf" : "/JOACHIM AGERON en.pdf"}
+                target="_blank"
+              >
                 <p className="text-white underline font-bold">
                   {t("header.resume")} {"->"}
                 </p>
               </a>
             </div>
             <Navigation activeId={activeId} />
+            <LanguageSwitcher />
           </div>
           <SocialLinks />
         </header>
