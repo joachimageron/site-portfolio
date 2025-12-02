@@ -175,7 +175,11 @@ export default function HomePage() {
             </div>
             <div className="mb-10 lg:mb-16">
               <a
-                href={locale === "fr" ? "/JOACHIM AGERON fr.pdf" : "/JOACHIM AGERON en.pdf"}
+                href={
+                  locale === "fr"
+                    ? "/JOACHIM%20AGERON%20fr.pdf"
+                    : "/JOACHIM%20AGERON%20en.pdf"
+                }
                 target="_blank"
               >
                 <p className="text-white underline font-bold">
