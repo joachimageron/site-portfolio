@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.git
+.idea
+.vscode
+.env*.local
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
+bun.lockb
