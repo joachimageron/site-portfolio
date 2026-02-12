@@ -2,6 +2,7 @@
 
 import { NextIntlClientProvider } from "next-intl";
 import Plausible from "./ui/components/Plausible";
+import Umami from "./ui/components/Umami";
 
 const timeZone = "Europe/Paris";
 
@@ -21,6 +22,7 @@ function Providers({
       messages={messages}
     >
       <Plausible/>
+      <Umami/>
       {children}
     </NextIntlClientProvider>
   );
