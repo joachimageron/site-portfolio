@@ -1,12 +1,12 @@
 {
   "header": {
     "name": "AGERON Joachim",
-    "title": "Full stack developer",
-    "tagline1": "Crafting seamless, robust, and cutting-edge solutions",
-    "tagline2": "for the modern web, one line of code at a time.",
+    "title": "Full Stack TypeScript Developer",
+    "tagline1": "I build useful products end to end,",
+    "tagline2": "from the UI to the infrastructure.",
     "location": "Lyon",
     "country": "France",
-    "contact": "Contact :",
+    "contact": "Contact:",
     "email": "ageron.joachim@gmail.com",
     "phone": "+33 7 81 41 30 42",
     "resume": "Download my resume"
@@ -24,30 +24,28 @@
   },
   "about": {
     "intro": "Hello, I'm",
-    "description1": ", a Full Stack developer passionate about the art of turning ideas into tangible digital solutions. My journey in web development began with simple curiosity and has flourished into a career dedicated to exploring new technologies, such as",
-    "description2": ". Through my experiences at",
-    "description3": "and",
-    "description4": ", I have developed and maintained robust architectures in",
-    "description5": ", while creating secure and high-performance web applications. My personal projects, such as building a social network with",
-    "description6": "and",
-    "description7": ", demonstrate my ability to design and implement innovative features.",
-    "personal1": "Outside the digital world, I find my inspiration in the tranquility of nature, the depth of music, and the enriching company of my friends. These passions, far from diverting me from my profession, enhance my",
-    "personal2": "creativity",
-    "personal3": "and",
-    "personal4": "optimism",
-    "conclusion1": "Currently pursuing a Master's in Web Development in Lyon, I am constantly on the lookout for new challenges and open to discussions on technological innovations. If you are",
-    "conclusion2": "in search of a motivated developer",
-    "conclusion3": "to bring a new dimension to your projects or to exchange ideas on the future of the web, I would be delighted to meet you. Together, let's explore the possibilities that web development offers to turn your visions into reality."
+    "description1": ", a full stack TypeScript developer. I build useful products end to end, from the UI to the infrastructure. During a 3-year apprenticeship at",
+    "description2": ", a file-transfer SaaS certified CSPN by the French ANSSI, I worked on all three layers of the product: frontend, backend and infrastructure.",
+    "project1": "My flagship project: I am the tech lead on the frontend rebuild of",
+    "project2": ", carried out by two of us within a team of 7 developers. We migrated a legacy .NET Razor/Vue codebase to",
+    "project3": "in a Turbo monorepo, fully dockerised it (a single image serving both the cloud and on-premise customers) and set up continuous deployment. Result: production releases cut from",
+    "project4": "45 to 3 minutes",
+    "personal1": "Outside of work, I run my own server with",
+    "personal2": ", where I host my projects, including an",
+    "personal3": "ERP for my mother's small business. The rest of the time, you'll find me on a skateboard, on the slopes or catching up on tech news.",
+    "conclusion1": "With a Master's in Web Engineering from ESGI Lyon and a TOEIC score of 910, I am looking for a",
+    "conclusion2": "full stack developer role in a product startup",
+    "conclusion3": ", where I can own a product from the UI to the infrastructure, before growing into a tech lead role."
   },
   "education": {
     "esgi": {
-      "title": "ESGI Ingénierie du Web",
+      "title": "Master's in Web Engineering, ESGI Lyon",
       "item1": "- Development",
       "item2": "- Cyber Security",
       "item3": "- Project Management"
     },
     "but": {
-      "title": "BUT MMI option development Web",
+      "title": "BUT MMI (Bachelor in Multimedia & Internet), web development track, IUT1 Grenoble",
       "item1": "- Web Development",
       "item2": "- Communication",
       "item3": "- Audiovisual"
@@ -57,29 +55,43 @@
     }
   },
   "experience": {
-    "bypolar": {
-      "title": "Personal project",
-      "link": "BypolarMedia",
-      "period": "2024 - Present",
-      "description": "A remake of my social media project, this time using Next.js and Prisma, to enhance my skills in these technologies."
-    },
     "transfertpro": {
-      "title": "Work-study program at",
-      "link": "Transfertpro",
-      "period": "2023 - Present",
-      "description": "At TransfertPro, I enhanced their secure data transfer platform and developed my Full Stack development skills, particularly in C#."
+      "title": "Apprenticeship at",
+      "link": "TransfertPro",
+      "period": "2023 - 2026",
+      "description": "Full stack developer on a file-transfer SaaS certified CSPN by the French ANSSI. Tech lead on the Tsend frontend rebuild: migration from a legacy .NET Razor/Vue codebase to Next.js + shadcn/ui in a Turbo monorepo, full dockerisation with a single image serving both the cloud and on-premise customers, and a CI/CD pipeline that cut production releases from 45 min down to 3 min (15× faster)."
     },
     "cypress": {
       "title": "Cypress project from scratch at",
-      "link": "Transfertpro",
+      "link": "TransfertPro",
       "period": "2024 - 3 months",
       "description": "At TransfertPro, I built a comprehensive Cypress project from the ground up. Additionally, I created PowerShell scripts to periodically test all infrastructures and implemented a mail system."
     },
+    "selfHosting": {
+      "title": "Personal projects & self-hosting",
+      "period": "2024 - Present",
+      "description": "Linux VPS managed with Dokploy, where I deploy, host and monitor my own services. Among them, a self-hosted Odoo ERP that I deployed and configured to run a small business."
+    },
+    "guessWho": {
+      "title": "\"Guess Who?\" online course project",
+      "period": "ESGI",
+      "description": "Real-time multiplayer take on the \"Guess Who?\" game, built on WebSockets and a state shared between players."
+    },
+    "bypolar": {
+      "title": "BypolarMedia personal project",
+      "period": "2024 - 3 months",
+      "description": "A remake of my social media project, this time using Next.js and Prisma, to enhance my skills in these technologies."
+    },
     "wallix": {
-      "title": "Stage at",
+      "title": "Internship at",
       "link": "Wallix",
+      "period": "2022 - 2 months",
+      "description": "Immersion at a European leader in cybersecurity (privileged access management): developed a React application for log visualisation and built a customisable CSS theme."
+    },
+    "booking": {
+      "title": "Booking platform at IUT1 Grenoble",
       "period": "2023 - 2 months",
-      "description": "During my internship at Wallix, I developed my front-end development skills by working with React and creating SCSS themes, enriching the backend interface of their security solutions."
+      "description": "Booking website for the audiovisual equipment of my university department: designed a secured API and its database, and a web application to book and manage time slots."
     },
     "messages": {
       "title": "Messages application course project",
@@ -89,7 +101,7 @@
     "escapeGame": {
       "title": "Escape game course project",
       "period": "2024 - 2 months",
-      "description": "For a course project, we developed an escape game application using React Native, It will be played in june."
+      "description": "For a course project, we developed an escape game application using React Native."
     },
     "socialMedia": {
       "title": "Social media course project",
