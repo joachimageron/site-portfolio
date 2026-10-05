@@ -49,9 +49,6 @@
       "item1": "- Développement Web",
       "item2": "- Communication",
       "item3": "- Audiovisuel"
-    },
-    "bac": {
-      "title": "BAC STI2D option SIN"
     }
   },
   "experience": {
@@ -77,11 +74,6 @@
       "period": "ESGI",
       "description": "Jeu multijoueur temps réel inspiré du « Qui est-ce ? », reposant sur les WebSockets et un état partagé entre les joueurs."
     },
-    "bypolar": {
-      "title": "Projet personnel BypolarMedia",
-      "period": "2024 - 3 mois",
-      "description": "Une refonte de mon projet de réseau social, cette fois en utilisant Next.js et Prisma, pour améliorer mes compétences dans ces technologies."
-    },
     "wallix": {
       "title": "Stage chez",
       "link": "Wallix",
@@ -92,21 +84,6 @@
       "title": "Site de réservation à l'IUT1 Grenoble",
       "period": "2023 - 2 mois",
       "description": "Site de réservation du matériel audiovisuel de mon IUT : conception d'une API sécurisée et de sa base de données, et application web pour réserver et gérer les créneaux."
-    },
-    "messages": {
-      "title": "Projet scolaire d'application de messages",
-      "period": "2024 - 3 semaines",
-      "description": "Dans un projet de cours, j'ai créé une application de messagerie instantanée en utilisant Next.js, tirant parti du rendu côté serveur pour une communication en temps réel et une expérience utilisateur améliorée."
-    },
-    "escapeGame": {
-      "title": "Projet scolaire escape game",
-      "period": "2024 - 2 mois",
-      "description": "Pour un projet de cours, nous avons développé une application d'escape game en React Native."
-    },
-    "socialMedia": {
-      "title": "Projet scolaire réseau social",
-      "period": "2022 - 1 mois",
-      "description": "Pour un projet de cours, nous avons construit une plateforme de réseau social en utilisant PHP natif."
     }
   },
   "footer": {

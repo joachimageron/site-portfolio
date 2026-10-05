@@ -71,11 +71,6 @@ export default function HomePage() {
         t("education.but.item3"),
       ],
     },
-    {
-      period: "2018 - 2021",
-      title: t("education.bac.title"),
-      url: "https://lyceereneperrin.fr/lycee-general-et-technologique/",
-    },
   ];
 
   const experienceItems = [
@@ -108,12 +103,6 @@ export default function HomePage() {
       tags: ["WebSockets"],
     },
     {
-      title: t("experience.bypolar.title"),
-      period: t("experience.bypolar.period"),
-      description: t("experience.bypolar.description"),
-      tags: ["Next", "Next Auth", "Next UI", "Prisma"],
-    },
-    {
       title: t("experience.wallix.title"),
       period: t("experience.wallix.period"),
       description: t("experience.wallix.description"),
@@ -126,24 +115,6 @@ export default function HomePage() {
       period: t("experience.booking.period"),
       description: t("experience.booking.description"),
       tags: ["API"],
-    },
-    {
-      title: t("experience.messages.title"),
-      period: t("experience.messages.period"),
-      description: t("experience.messages.description"),
-      tags: ["Next.js", "TypeScript", "Tailwind", "Postgres"],
-    },
-    {
-      title: t("experience.escapeGame.title"),
-      period: t("experience.escapeGame.period"),
-      description: t("experience.escapeGame.description"),
-      tags: ["TypeScript", "React Native"],
-    },
-    {
-      title: t("experience.socialMedia.title"),
-      period: t("experience.socialMedia.period"),
-      description: t("experience.socialMedia.description"),
-      tags: ["PHP", "HTML", "CSS", "SQL"],
     },
   ];
 

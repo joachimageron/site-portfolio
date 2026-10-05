@@ -49,9 +49,6 @@
       "item1": "- Web Development",
       "item2": "- Communication",
       "item3": "- Audiovisual"
-    },
-    "bac": {
-      "title": "BAC STI2D option SIN"
     }
   },
   "experience": {
@@ -77,11 +74,6 @@
       "period": "ESGI",
       "description": "Real-time multiplayer take on the \"Guess Who?\" game, built on WebSockets and a state shared between players."
     },
-    "bypolar": {
-      "title": "BypolarMedia personal project",
-      "period": "2024 - 3 months",
-      "description": "A remake of my social media project, this time using Next.js and Prisma, to enhance my skills in these technologies."
-    },
     "wallix": {
       "title": "Internship at",
       "link": "Wallix",
@@ -92,21 +84,6 @@
       "title": "Booking platform at IUT1 Grenoble",
       "period": "2023 - 2 months",
       "description": "Booking website for the audiovisual equipment of my university department: designed a secured API and its database, and a web application to book and manage time slots."
-    },
-    "messages": {
-      "title": "Messages application course project",
-      "period": "2024 - 3 weeks",
-      "description": "In a course project, I created an instant messaging application using Next.js, leveraging server-side rendering for real-time communication and an enhanced user experience."
-    },
-    "escapeGame": {
-      "title": "Escape game course project",
-      "period": "2024 - 2 months",
-      "description": "For a course project, we developed an escape game application using React Native."
-    },
-    "socialMedia": {
-      "title": "Social media course project",
-      "period": "2022 - 1 month",
-      "description": "For a course project, we built a social media platform using native PHP."
     }
   },
   "footer": {
