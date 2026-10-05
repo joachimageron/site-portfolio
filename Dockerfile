@@ -1,6 +1,6 @@
 # Build stage
 # On remplace docker.io par public.ecr.aws
-FROM public.ecr.aws/docker/library/node:alpine AS builder
+FROM public.ecr.aws/docker/library/node:26-alpine3.24 AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN pnpm run build
 
 # Production stage
 # Idem pour nginx
-FROM public.ecr.aws/docker/library/nginx:alpine
+FROM public.ecr.aws/docker/library/nginx:1.31-alpine3.24
 
 # Copy built assets from builder stage
 COPY --from=builder /app/out /usr/share/nginx/html
