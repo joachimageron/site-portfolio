@@ -1,14 +1,14 @@
 # Build stage
 # On remplace docker.io par public.ecr.aws
-FROM public.ecr.aws/docker/library/node:26-alpine3.24 AS builder
+FROM public.ecr.aws/docker/library/node:24-alpine3.24 AS builder
 
 WORKDIR /app
 
-# Enable pnpm (pinned: pnpm 12 ignores the "pnpm" field of package.json and breaks --frozen-lockfile)
-RUN npm install -g pnpm@10.31.0
+# Enable pnpm (pnpm settings live in pnpm-workspace.yaml since pnpm 11)
+RUN npm install -g pnpm@12
 
 # Copy dependency files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 # Install dependencies
 RUN --mount=type=cache,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
