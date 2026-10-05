@@ -4,7 +4,7 @@ FROM public.ecr.aws/docker/library/node:alpine AS builder
 
 WORKDIR /app
 
-# Enable pnpm (pinned: pnpm 11+ ignores the "pnpm" field of package.json and breaks --frozen-lockfile)
+# Enable pnpm (pinned: pnpm 12 ignores the "pnpm" field of package.json and breaks --frozen-lockfile)
 RUN npm install -g pnpm@10.31.0
 
 # Copy dependency files
