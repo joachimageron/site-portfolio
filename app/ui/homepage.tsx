@@ -36,14 +36,18 @@ export default function HomePage() {
   }, []);
 
   const skills = [
-    { skill: "Cypress", level: t("skills.professionalPractitioner") },
-    { skill: "React", level: t("skills.professionalPractitioner") },
-    { skill: "React Native", level: t("skills.hobbyistHacker") },
+    { skill: "TypeScript", level: t("skills.professionalPractitioner") },
     { skill: "Next.js", level: t("skills.professionalPractitioner") },
-    { skill: "PHP", level: t("skills.hobbyistHacker") },
-    { skill: "Symfony", level: t("skills.dippingToes") },
+    { skill: "React", level: t("skills.professionalPractitioner") },
+    { skill: "Docker / Swarm", level: t("skills.professionalPractitioner") },
+    { skill: "CI/CD", level: t("skills.professionalPractitioner") },
+    { skill: "Node.js", level: t("skills.hobbyistHacker") },
+    { skill: "NestJS", level: t("skills.hobbyistHacker") },
     { skill: "SQL", level: t("skills.hobbyistHacker") },
-    { skill: "C#", level: t("skills.hobbyistHacker") },
+    { skill: "C# / .NET", level: t("skills.hobbyistHacker") },
+    { skill: "Linux / VPS", level: t("skills.hobbyistHacker") },
+    { skill: "Go", level: t("skills.dippingToes") },
+    { skill: "Kubernetes", level: t("skills.dippingToes") },
   ];
 
   const educationItems = [
@@ -67,29 +71,16 @@ export default function HomePage() {
         t("education.but.item3"),
       ],
     },
-    {
-      period: "2018 - 2021",
-      title: t("education.bac.title"),
-      url: "https://lyceereneperrin.fr/lycee-general-et-technologique/",
-    },
   ];
 
   const experienceItems = [
-    {
-      title: t("experience.bypolar.title"),
-      period: t("experience.bypolar.period"),
-      description: t("experience.bypolar.description"),
-      url: "https://bypolar.ageronjoachim.com",
-      linkText: t("experience.bypolar.link"),
-      tags: ["Next", "Next Auth", "Next UI", "Prisma"],
-    },
     {
       title: t("experience.transfertpro.title"),
       period: t("experience.transfertpro.period"),
       description: t("experience.transfertpro.description"),
       url: "https://www.transfertpro.com/",
       linkText: t("experience.transfertpro.link"),
-      tags: ["C#", "Cypress"],
+      tags: ["TypeScript", "Next.js", "shadcn/ui", "Turbo", "Docker", "CI/CD", ".NET"],
     },
     {
       title: t("experience.cypress.title"),
@@ -100,6 +91,18 @@ export default function HomePage() {
       tags: ["Cypress", "JS", "PowerShell"],
     },
     {
+      title: t("experience.selfHosting.title"),
+      period: t("experience.selfHosting.period"),
+      description: t("experience.selfHosting.description"),
+      tags: ["Linux", "Dokploy", "Docker", "Odoo"],
+    },
+    {
+      title: t("experience.guessWho.title"),
+      period: t("experience.guessWho.period"),
+      description: t("experience.guessWho.description"),
+      tags: ["WebSockets"],
+    },
+    {
       title: t("experience.wallix.title"),
       period: t("experience.wallix.period"),
       description: t("experience.wallix.description"),
@@ -108,22 +111,10 @@ export default function HomePage() {
       tags: ["React", "SCSS"],
     },
     {
-      title: t("experience.messages.title"),
-      period: t("experience.messages.period"),
-      description: t("experience.messages.description"),
-      tags: ["Next.js", "TypeScript", "Tailwind", "Postgres"],
-    },
-    {
-      title: t("experience.escapeGame.title"),
-      period: t("experience.escapeGame.period"),
-      description: t("experience.escapeGame.description"),
-      tags: ["TypeScript", "React Native"],
-    },
-    {
-      title: t("experience.socialMedia.title"),
-      period: t("experience.socialMedia.period"),
-      description: t("experience.socialMedia.description"),
-      tags: ["PHP", "HTML", "CSS", "SQL"],
+      title: t("experience.booking.title"),
+      period: t("experience.booking.period"),
+      description: t("experience.booking.description"),
+      tags: ["API"],
     },
   ];
 
@@ -212,39 +203,32 @@ export default function HomePage() {
               {t("about.intro")}{" "}
               <span className="text-white font-bold">{t("header.name")}</span>
               {t("about.description1")}{" "}
-              <span className="text-white font-bold">React</span>,{" "}
-              <span className="text-white font-bold">Next.js</span>,{" "}
-              {t("about.description2")}{" "}
-              <span className="text-white font-bold">Typescript</span>
-              {t("about.description2")}{" "}
-              <span className="text-white font-bold">Transfert Pro</span>{" "}
-              {t("about.description3")}{" "}
-              <span className="text-white font-bold">Wallix</span>
-              {t("about.description4")}{" "}
-              <span className="text-white font-bold">C#</span>
-              {t("about.description5")}{" "}
-              <span className="text-white font-bold">Next.js</span>{" "}
-              {t("about.description6")}{" "}
-              <span className="text-white font-bold">Prisma</span>
-              {t("about.description7")}
+              <span className="text-white font-bold">TransfertPro</span>
+              {t("about.description2")}
             </p>
             <p className="mb-6">
-              {t("about.personal1")}{" "}
+              {t("about.project1")}{" "}
+              <span className="text-white font-bold">Tsend</span>
+              {t("about.project2")}{" "}
+              <span className="text-white font-bold">Next.js + shadcn/ui</span>{" "}
+              {t("about.project3")}{" "}
               <span className="text-white font-bold">
-                {t("about.personal2")}
-              </span>{" "}
-              {t("about.personal3")}{" "}
-              <span className="text-white font-bold">
-                {t("about.personal4")}
+                {t("about.project4")}
               </span>
               .
             </p>
+            <p className="mb-6">
+              {t("about.personal1")}{" "}
+              <span className="text-white font-bold">Dokploy</span>
+              {t("about.personal2")}{" "}
+              <span className="text-white font-bold">Odoo</span>{" "}
+              {t("about.personal3")}
+            </p>
             <p>
-              {t("about.conclusion1")}
+              {t("about.conclusion1")}{" "}
               <span className="text-white font-bold">
-                {" "}
                 {t("about.conclusion2")}
-              </span>{" "}
+              </span>
               {t("about.conclusion3")}
             </p>
           </section>

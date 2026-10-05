@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: "Joachim Ageron Portfolio",
         short_name: "Joachim Ageron",
-        description: "Full stack developer portfolio",
+        description: "Portfolio of Joachim Ageron, full stack TypeScript developer",
         start_url: "/",
         display: "standalone",
         background_color: "#050318",

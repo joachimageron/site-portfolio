@@ -79,16 +79,32 @@ export default async function Home({ params }: Props) {
     "@type": "Person",
     name: "Joachim Ageron",
     url: "https://ageronjoachim.com",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Full Stack TypeScript Developer",
     image: "https://ageronjoachim.com/pp.png",
+    email: "mailto:ageron.joachim@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lyon",
+      addressCountry: "FR",
+    },
     sameAs: [
       "https://github.com/joachimageron",
       "https://www.linkedin.com/in/joachim-ageron-dit-blanc/",
     ],
-    worksFor: {
-      "@type": "Organization",
-      name: "Freelance",
-    },
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "ESGI Lyon" },
+      { "@type": "CollegeOrUniversity", name: "IUT1 Grenoble" },
+    ],
+    knowsAbout: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Node.js",
+      "NestJS",
+      "Docker",
+      "CI/CD",
+      "Linux",
+    ],
   };
 
   return (
