@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors';
 
 
 const config: Config = {
@@ -9,13 +8,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    // The site palette lives in globals.css, as CSS variables.
     colors: {
-      darkbg: "#050318",
-      indigo: colors.indigo,
-      blue: colors.blue,
-      'white': '#ffffff',
-      'main-text':'rgb(176 190 218)'
-      
+      darkbg: "rgb(var(--color-bg) / <alpha-value>)",
+      "main-text": "rgb(var(--color-text) / <alpha-value>)",
+      tag: "rgb(var(--color-tag) / <alpha-value>)",
+      accent: "rgb(var(--color-accent) / <alpha-value>)",
+      white: "#ffffff",
     },
     extend: {
       backgroundImage: {

@@ -9,8 +9,9 @@ export default function manifest(): MetadataRoute.Manifest {
         description: "Portfolio of Joachim Ageron, full stack TypeScript developer",
         start_url: "/",
         display: "standalone",
-        background_color: "#050318",
-        theme_color: "#050318",
+        // --color-bg in globals.css
+        background_color: "#02040e",
+        theme_color: "#02040e",
         icons: [
             {
                 src: "/favicon.ico",

@@ -29,12 +29,26 @@ body {
     ) rgb(var(--background-start-rgb));
 }
 
+/*
+ * Site palette, as "r g b" triplets: the page background, body text, tag pills
+ * and navigation accent (Tailwind colours darkbg, main-text, tag, accent), the
+ * cursor halo, and the characters of the ASCII background.
+ */
+:root {
+    --color-bg: 2 4 14;
+    --color-text: 148 163 190;
+    --color-tag: 15 27 60;
+    --color-accent: 147 179 240;
+    --color-halo: 23 37 84;
+    --color-ink: 30 64 175;
+}
+
+/* Its radius (450px) is also the reach of the cursor light in asciiScene.ts. */
 .cursor-halo {
     position: fixed;
-    width: 700px;
-    height: 700px;
-    background: rgb(30,64,175);
-    background: radial-gradient(circle, rgba(30,64,175,0.2) 0%, rgba(0,0,0,0) 70%);
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgb(var(--color-halo) / 0.2) 0%, transparent 70%);
 }
 
 

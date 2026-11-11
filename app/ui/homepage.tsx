@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import CursorHalo from "@/app/ui/components/cursorHalo";
+import AsciiBackground from "@/app/ui/components/AsciiBackground";
 import LivingAvatar from "@/app/ui/components/LivingAvatar";
 import Navigation from "@/app/ui/components/Navigation";
 import LanguageSwitcher from "@/app/ui/components/LanguageSwitcher";
@@ -119,9 +120,10 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="dark">
+    <main className="dark isolate bg-darkbg">
+      <AsciiBackground />
       <CursorHalo />
-      <div className="z-10 justify-center bg-darkbg px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
+      <div className="z-10 justify-center px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
         <header className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-16 lg:flex lg:flex-col lg:justify-between">
           <div>
             <div className="flex gap-8 mb-6">
