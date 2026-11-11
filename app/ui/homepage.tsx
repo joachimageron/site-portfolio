@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import CursorHalo from "@/app/ui/components/cursorHalo";
+import AsciiBackground from "@/app/ui/components/AsciiBackground";
+import LivingAvatar from "@/app/ui/components/LivingAvatar";
 import Navigation from "@/app/ui/components/Navigation";
 import LanguageSwitcher from "@/app/ui/components/LanguageSwitcher";
 import SectionHeader from "@/app/ui/components/SectionHeader";
@@ -119,9 +120,10 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="dark">
+    <main className="dark isolate bg-darkbg">
+      <AsciiBackground />
       <CursorHalo />
-      <div className="z-10 justify-center bg-darkbg px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
+      <div className="z-10 justify-center px-6 py-12 text-main-text flex flex-col items-center lg:flex-row lg:items-start lg:px-24 lg:py-0 lg:gap-10">
         <header className="max-w-2xl w-full relative lg:sticky lg:top-0 lg:h-screen lg:py-16 lg:flex lg:flex-col lg:justify-between">
           <div>
             <div className="flex gap-8 mb-6">
@@ -133,14 +135,7 @@ export default function HomePage() {
                   {t("header.title")}
                 </h2>
               </div>
-              <div className="rounded-full w-28 h-28 relative hidden lg:block -mt-4">
-                <Image
-                  src="/pp.png"
-                  alt="profile picture"
-                  fill={true}
-                  className="rounded-full object-cover"
-                />
-              </div>
+              <LivingAvatar />
             </div>
             <p>{t("header.tagline1")}</p>
             <p>{t("header.tagline2")}</p>

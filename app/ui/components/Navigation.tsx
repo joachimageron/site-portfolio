@@ -27,7 +27,7 @@ export default function Navigation({ activeId }: NavigationProps) {
             >
               <div
                 className={
-                  "bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-indigo-200 transition-all group-[.active]:w-16 group-[.active]:bg-indigo-200"
+                  "bg-white w-8 h-0.5 rounded-full self-center group-hover:w-16 group-hover:bg-accent transition-all group-[.active]:w-16 group-[.active]:bg-accent"
                 }
               />
               <h2

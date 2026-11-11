@@ -31,7 +31,7 @@ export default function ExperienceItem({
       <p className="pb-5">{description}</p>
       <div className="flex gap-5 flex-wrap">
         {tags.map((tag) => (
-          <div key={tag} className="rounded-full px-5 py-2 bg-blue-950 w-fit">
+          <div key={tag} className="rounded-full px-5 py-2 bg-tag w-fit">
             <p>{tag}</p>
           </div>
         ))}

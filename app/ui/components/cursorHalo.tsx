@@ -6,8 +6,8 @@ export default function CursorHalo() {
       window.addEventListener('mousemove', (e) => {
          if (!halo) return;
          
-         halo.style.left = (e.clientX - 350) + 'px';
-         halo.style.top = (e.clientY - 350) + 'px';
+         halo.style.left = (e.clientX - halo.offsetWidth / 2) + 'px';
+         halo.style.top = (e.clientY - halo.offsetHeight / 2) + 'px';
       });
    }, []);
    return (
