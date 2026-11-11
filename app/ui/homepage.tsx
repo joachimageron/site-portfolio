@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import CursorHalo from "@/app/ui/components/cursorHalo";
+import LivingAvatar from "@/app/ui/components/LivingAvatar";
 import Navigation from "@/app/ui/components/Navigation";
 import LanguageSwitcher from "@/app/ui/components/LanguageSwitcher";
 import SectionHeader from "@/app/ui/components/SectionHeader";
@@ -133,14 +133,7 @@ export default function HomePage() {
                   {t("header.title")}
                 </h2>
               </div>
-              <div className="rounded-full w-28 h-28 relative hidden lg:block -mt-4">
-                <Image
-                  src="/pp.png"
-                  alt="profile picture"
-                  fill={true}
-                  className="rounded-full object-cover"
-                />
-              </div>
+              <LivingAvatar />
             </div>
             <p>{t("header.tagline1")}</p>
             <p>{t("header.tagline2")}</p>
